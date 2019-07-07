@@ -6,14 +6,14 @@ import { Router, Route, Switch } from "react-router-dom";
 import "assets/scss/material-kit-react.scss?v=1.7.0";
 
 // pages for this product
-import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
+import Main from "views/Main/Main.jsx";
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/" component={ProfilePage} />
+      <Route path="/" component={Main} />
     </Switch>
   </Router>,
   document.getElementById("root")

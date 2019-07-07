@@ -117,7 +117,7 @@ export default function ButtonBases(props) {
                         style={{
                             width: image.width,
                             marginBottom: "2.142rem",
-                            borderRadius: '20px'
+                            borderRadius: '6px'
                         }}>
                         <span
                             className={classes.imageSrc}

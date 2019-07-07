@@ -4,6 +4,7 @@
   "description": "Material Kit React. Coded by Creative Tim",
   "private": true,
   "main": "dist/index.js",
+  "homepage": "https://marcossk8.github.io/marcosAlmendrosPorfolio/",
   "dependencies": {
     "@material-ui/core": "4.1.0",
     "@material-ui/icons": "4.1.0",
@@ -37,6 +38,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
