@@ -6,9 +6,12 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { List, ListItem, withStyles } from "@material-ui/core";
 import Button from "components/CustomButtons/Button.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
+import GridItem from "components/Grid/GridItem.jsx";
 import Phone from '@material-ui/icons/Phone';
 import Email from '@material-ui/icons/Email';
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
+import './Footer.css'
 
 function Footer({ ...props }) {
   const { classes, whiteFont } = props;
@@ -23,8 +26,61 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
-          <List className={classes.list} style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+        {/* <div className={classes.left}> */}
+        <GridContainer>
+          <GridItem xs={12} sm={12} md={8} className={'contIcons'}>
+            <Button
+              justIcon
+              link
+              className={classes.margin5}
+              href='https://www.instagram.com/marcosdalmendros/?hl=es-la'>
+              <i style={{ color: '#393737' }} className={"fab fa-instagram"} />
+            </Button>
+            <Button
+              justIcon
+              link
+              className={classes.margin5}
+              href='https://www.facebook.com/marcos.almendros'>
+              <i style={{ color: '#393737' }} className={"fab fa-facebook"} />
+            </Button>
+            <Button
+              justIcon
+              link
+              className={classes.margin5}
+              href='https://www.facebook.com/marcos.almendros'>
+              <i style={{ color: '#393737' }} className={"fab fa-facebook"} />
+            </Button>
+            <Button
+              justIcon
+              link
+              className={classes.margin5}
+              href='https://www.linkedin.com/in/marcos-almendros-225b75183/'>
+              <i style={{ color: '#393737' }} className={"fab fa-linkedin"} />
+            </Button>
+            <Button
+              justIcon
+              link
+              className={classes.margin5}
+              href='https://github.com/marcossk8'>
+              <i style={{ color: '#393737' }} className={"fab fa-github"} />
+            </Button>
+            <div style={{ display: 'flex', marginRight: 20, alignItems: 'center', marginLeft: 20, }}>
+              <Phone style={{ color: '#393737', height: "20px", width: '20px' }}></Phone>
+              <span style={{ color: '#393737', marginLeft: 10 }}>351-2522007</span>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <Email style={{ color: '#393737', height: "20px", width: '20px', }}></Email>
+              <span style={{ color: '#393737', marginLeft: 10 }}>marcosdalmendros@gmail.com</span>
+            </div>
+          </GridItem>
+
+          <GridItem xs={12} sm={12} md={4} className={'contCopyRight'}>
+            <span style={{ color: '#393737' }} >&copy;{1900 + new Date().getYear()} , Marcos Almendros.</span>
+          </GridItem>
+
+        </GridContainer>
+        {/* <List className={classes.list} style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
             <ListItem className={classes.inlineBlock}>
               <Button
                 justIcon
@@ -51,6 +107,13 @@ function Footer({ ...props }) {
                 href='https://www.linkedin.com/in/marcos-almendros-225b75183/'>
                 <i style={{ color: '#393737' }} className={"fab fa-linkedin"} />
               </Button>
+              <Button
+                justIcon
+                link
+                className={classes.margin5}
+                href='https://github.com/marcossk8'>
+                <i style={{ color: '#393737' }} className={"fab fa-github"} />
+              </Button>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <div style={{ display: 'flex', marginRight: 20, alignItems: 'center', marginLeft: 20, }}>
@@ -64,11 +127,11 @@ function Footer({ ...props }) {
                 <span style={{ color: '#393737', marginLeft: 10 }}>marcosdalmendros@gmail.com</span>
               </div>
             </ListItem>
-          </List>
-        </div>
-        <div className={classes.right}>
+          </List> */}
+        {/* </div> */}
+        {/* <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} , Marcos Almendros.
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -55,7 +55,7 @@ const ImagesDesciption = props => {
                                             ?
                                             props.image.languages.map((item, k) => {
                                                 return (
-                                                    <Chip key={k} variant="outlined" label={item} style={{ marginRight: 10 }} />
+                                                    <Chip key={k} variant="outlined" label={item} style={{ marginRight: 10, marginBottom: 5 }} />
                                                 )
                                             })
                                             :

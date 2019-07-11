@@ -101,7 +101,6 @@ class MainPage extends React.Component {
         } else if (s == 'contacto') {
           number = 3
         }
-
         this.setState({ active: s, activeNumber: number })
       }
     };
@@ -184,6 +183,13 @@ class MainPage extends React.Component {
                         className={classes.margin5}
                         href='https://www.linkedin.com/in/marcos-almendros-225b75183/'>
                         <i className={"fab fa-linkedin"} />
+                      </Button>
+                      <Button
+                        justIcon
+                        link
+                        className={classes.margin5}
+                        href='https://github.com/marcossk8'>
+                        <i className={"fab fa-github"} />
                       </Button>
                     </div>
                   </div>
