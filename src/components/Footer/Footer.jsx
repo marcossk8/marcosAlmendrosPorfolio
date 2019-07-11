@@ -47,13 +47,6 @@ function Footer({ ...props }) {
               justIcon
               link
               className={classes.margin5}
-              href='https://www.facebook.com/marcos.almendros'>
-              <i style={{ color: '#393737' }} className={"fab fa-facebook"} />
-            </Button>
-            <Button
-              justIcon
-              link
-              className={classes.margin5}
               href='https://www.linkedin.com/in/marcos-almendros-225b75183/'>
               <i style={{ color: '#393737' }} className={"fab fa-linkedin"} />
             </Button>
